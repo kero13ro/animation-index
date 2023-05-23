@@ -1,11 +1,30 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.json",
+    "public/data/*.js"
+  ],
+  "exclude": [
+    "src/**/__tests__/*",
+    "node_modules",
+    "dist",
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": true,
+    "checkJs": false,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "~/*": [
+        "./*"
+      ]
     }
-  ]
+  }
 }

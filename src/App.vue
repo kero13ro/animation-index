@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header>
+  <header class="grid gap-4 grid-cols-6">
     <RouterLink class="btn" to="/blob">blob</RouterLink>
     <RouterLink class="btn" to="/ToggleTimeline">ToggleTimeline</RouterLink>
     <RouterLink class="btn" to="/ScrollView">ScrollView</RouterLink>

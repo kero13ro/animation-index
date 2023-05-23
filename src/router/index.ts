@@ -10,11 +10,33 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/blob',
+      name: 'blob',
+      component: () => import('@/views/blob.vue'),
+    },
+    {
+      path: '/ToggleTimeline',
+      name: 'ToggleTimeline',
+      component: () => import('@/views/ToggleTimeline.vue'),
+    },
+    {
+      path: '/ScrollView',
+      name: 'ScrollView',
+      component: () => import('@/views/ScrollView.vue'),
+    },
+    {
+      path: '/ScrollView-clean',
+      name: 'ScrollView-clean',
+      component: () => import('@/views/ScrollView-clean.vue'),
+    },
+    {
+      path: '/trans-slot',
+      name: 'trans-slot',
+      component: () => import('@/views/trans-slot.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
   ],
