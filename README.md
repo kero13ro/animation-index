@@ -16,8 +16,8 @@
 - 使用 Git 的子樹指令 subtree，將 dist 資料夾視為一個獨立的子專案，並將該子專案的變更推送到遠端儲存庫的 gh-pages 分支
 
 ```bash
+npm run build
 git add dist -f
 git commit -m "Adding dist"
-npm run build
 git subtree push --prefix dist origin gh-pages
 ```
