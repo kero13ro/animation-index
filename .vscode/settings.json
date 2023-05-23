@@ -1,0 +1,82 @@
+{
+  "typescript.suggestionActions.enabled": false,
+  "javascript.suggestionActions.enabled": false,
+  // "[scss]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  //   // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "editor.quickSuggestions": {
+  //   "strings": true
+  // },
+  // "[vue]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascript]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[vue]": {
+  //   "editor.defaultFormatter": "Vue.volar"
+  // },
+
+  "eslint.codeActionsOnSave.mode": "problems",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    // "source.sortMembers": true
+    // "source.organizeImports": true,
+  },
+
+  // "i18n-ally.sortKeys": true,
+  "i18n-ally.enabledParsers": ["json"],
+  // "i18n-ally.localesPaths": ["locales/data/"],
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ],
+  "i18n-ally.autoDetection": true,
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.displayLanguage": "zh-tw",
+  "i18n-ally.enabledFrameworks": ["vue"],
+
+  "cSpell.words": [
+    "animejs",
+    "composables",
+    "daisyui",
+    "gsap",
+    "iconify",
+    "KUTE",
+    "nuxi",
+    "nuxt",
+    "nuxtjs",
+    "Parens",
+    "Pinia",
+    "swiper",
+    "tailwindcss",
+    "unplugin",
+    "Vite",
+    "vueuse",
+    "Wireframe"
+  ],
+  "liveServer.settings.root": "/dist/",
+  // "vue.codeActions.enabled": false
+
+  // "tailwindCSS.includeLanguages": {
+  //   "plaintext": "html"
+  // },
+  // "tailwindCSS.files.exclude": [
+  //   "**/.output/**/*",
+  //   "**/public/**/*",
+  //   "**/dist/**/*",
+  //   "**/node_modules/**/*"
+  // ],
+  // "tailwindCSS.files": ["**/dist/**/*", "**/node_modules/**/*"]
+  // "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs",
+  // "tailwindCSS.emmetCompletions": true,
+  "scss.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
