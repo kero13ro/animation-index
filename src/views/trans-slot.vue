@@ -32,7 +32,9 @@
 <template>
   <div class="wrap">
     <div class="row">
-      <button @click="fadeShow = !fadeShow">fadeShow</button>
+      <button class="btn btn-primary" @click="fadeShow = !fadeShow">
+        fadeShow
+      </button>
       <TransFade>
         <h1 v-show="fadeShow">13</h1>
       </TransFade>
@@ -45,7 +47,9 @@
       </fade2Show>
     </div> -->
     <div class="row">
-      <button @click="TransRuns = !TransRuns">TransRuns</button>
+      <button class="btn btn-primary" @click="TransRuns = !TransRuns">
+        TransRuns
+      </button>
       <transition @enter="enter" @leave="leave" :css="false">
         <h2 v-show="TransRuns">111</h2>
       </transition>
