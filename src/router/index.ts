@@ -9,6 +9,16 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    // {
+    //   path: '/scroll',
+    //   name: 'scroll',
+    //   component: () => import('@/views/scroll.vue'),
+    // },
+    {
+      path: '/perspective',
+      name: 'perspective',
+      component: () => import('@/views/perspective.vue'),
+    },
     {
       path: '/blob',
       name: 'blob',
